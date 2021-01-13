@@ -1,8 +1,10 @@
 import React, { useContext } from "react";
+import { useHistory } from "react-router-dom";
 import "./Home.css";
 import { NameContext } from "../State/NameContext";
 
 const Home = () => {
+	let history = useHistory();
 	const [name, setName] = useContext(NameContext);
 	const [storeName, setStoreName] = React.useState("");
 	const [active, setActive] = React.useState(true);
@@ -18,8 +20,8 @@ const Home = () => {
 		if (keycode === 13 && storeName !== "") {
 			setName(storeName);
 			setStoreName("");
+			history.push("/notes");
 		} else if (keycode === 13 && storeName === "") {
-			console.log("Did not type anything");
 			setTimeout(() => {
 				setActive(true);
 			}, 1000);
