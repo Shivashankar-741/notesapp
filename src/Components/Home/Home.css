@@ -46,9 +46,19 @@
 		font-size: 13px;
 	}
 	.bottom--value,
-	.bottom--name {
+	.bottom--name,
+	.notempty,
+	.notempty-active {
 		margin-left: 30px;
 		margin-top: 15px;
+	}
+	.notempty {
+		color: red;
+		visibility: hidden;
+	}
+	.notempty-active {
+		color: red;
+		visibility: visible;
 	}
 }
 @media only screen and (min-width: 600px) {
@@ -60,7 +70,7 @@
 	}
 	.top--in {
 		margin: 30px 0;
-		font-size: 30px;
+		font-size: 40px;
 		color: #fffcec;
 		word-spacing: 0.8;
 		letter-spacing: 2.5;
