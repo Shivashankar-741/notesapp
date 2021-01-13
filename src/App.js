@@ -1,8 +1,12 @@
+import Home from "./Components/Home/Home";
+import { NameProvider } from "./Components/State/NameContext";
 function App() {
 	return (
-		<div className="App">
-			<h1>NotesApp</h1>
-		</div>
+		<NameProvider>
+			<div className="App">
+				<Home />
+			</div>
+		</NameProvider>
 	);
 }
 
