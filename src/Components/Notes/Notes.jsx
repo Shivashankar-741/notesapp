@@ -1,11 +1,13 @@
 import React from "react";
+import NotesDetails from "./NotesDetails/NotesDetails";
+import NotesList from "./NotesList/NotesList";
 import "./Notes.css";
-import NotesDetails from "./NotesDetails";
 
 const Notes = () => {
 	return (
 		<div className="Notes">
 			<NotesDetails />
+			<NotesList />
 		</div>
 	);
 };

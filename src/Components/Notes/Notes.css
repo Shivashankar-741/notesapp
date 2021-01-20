@@ -57,6 +57,7 @@
 	left: 5%;
 	opacity: 0;
 	transition: all 0.5s;
+	padding: 25px;
 }
 .settings--popupActive {
 	width: 650px;
@@ -69,4 +70,119 @@
 	left: 5%;
 	opacity: 1;
 	transition: all 0.5s;
+	padding: 25px;
+}
+
+.themes--colors {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+}
+
+.themes--colorsIn {
+	height: 18px;
+	width: 18px;
+	border-radius: 50%;
+	background-color: red;
+	margin: 0 5px;
+	cursor: pointer;
+	transition: all 0.1s;
+	outline-color: coral;
+}
+.themes--colorsIn:active {
+	transform: scale(1.2);
+	transition: all 0.1s;
+}
+.green {
+	background-color: #41a169;
+}
+.blue {
+	background-color: #61aae5;
+}
+.purple {
+	background-color: #8269d5;
+}
+.red {
+	background-color: #e53e3e;
+}
+.orange {
+	background-color: #dc6c31;
+}
+.darkBlue {
+	background-color: #5b69d8;
+}
+.lightGreen {
+	background-color: #319795;
+}
+.gray {
+	background-color: #718096;
+}
+.yellow {
+	background-color: #d59e31;
+}
+
+/* NotesDetailspopup */
+
+.popup--heading,
+.popup--fieldsHead,
+.theme--header,
+.theme--bannerHeader,
+.bannerHeader {
+	margin: 0;
+}
+
+.popup--heading {
+	font-size: 24px;
+	font-weight: 600px;
+	letter-spacing: 1.5px;
+}
+
+.popup--fields,
+.themes,
+.banner,
+.save {
+	margin: 15px 0;
+}
+
+.popup--fieldsHead,
+.theme--header,
+.bannerHeader {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.popup--fieldsInput,
+.banner--fieldsInput {
+	margin: 10px 0;
+	padding: 4px 20px;
+	border: none;
+	outline: none;
+}
+
+.bannerBtn {
+	margin-left: 2px;
+	padding: 8px;
+	background-color: #2c5282;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 400;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+}
+.save {
+	margin: 5px 0;
+}
+
+.save--btn {
+	background-color: #2c5282;
+	padding: 8px 25px;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 400;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
 }
