@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { NameContext } from "../../State/NameContext";
 import { SetpopupContext } from "../../State/SetpopupContext";
+import { ThemeContext } from "../../State/ThemeContext";
 import { IoMdSettings } from "react-icons/io";
 import NotesDetailspopup from "./NotesDetailspopup";
 
@@ -9,9 +10,10 @@ import NotesDetailspopup from "./NotesDetailspopup";
 const NotesDetails = () => {
 	const [name] = useContext(NameContext);
 	const [popup, setPopup] = useContext(SetpopupContext);
+	const [theme, setTheme] = useContext(ThemeContext);
 
 	return (
-		<div className="Notes--details">
+		<div className="Notes--details" style={{ backgroundColor: theme }}>
 			<NotesDetailspopup />
 
 			<div className="Notes--namenddata">
