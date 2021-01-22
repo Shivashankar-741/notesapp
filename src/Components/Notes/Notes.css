@@ -1,124 +1,125 @@
 .Notes--details {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background-color: #61aae5;
-	height: 35vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #61aae5;
+  height: 35vh;
 }
 
 .Notes--name {
-	margin: 0;
-	font-size: 40px;
-	font-weight: 400;
-	color: #ffffff;
-	letter-spacing: 1.5px;
+  margin: 0;
+  font-size: 40px;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 1.5px;
 }
 .Notes--date {
-	color: yellow;
-	font-weight: 900;
-	letter-spacing: 2px;
+  color: yellow;
+  font-weight: 900;
+  letter-spacing: 2px;
 }
 
 .Notes--namenddata,
 .Notes--settingsBtn {
-	margin: 0 40px;
+  margin: 0 40px;
 }
 .Notes--settingsBtn {
-	display: flex;
+  display: flex;
 }
 
 .Notes--settingsIcon {
-	display: flex;
-	align-items: center;
-	margin-right: 5px;
-	color: rgb(247, 244, 244);
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  color: rgb(247, 244, 244);
 }
 
 .Notes--settingsBtn {
-	font-size: 14px;
-	font-weight: 400;
-	padding: 10px 20px;
-	background-color: #2c5282;
-	color: #ffffff;
-	border-radius: 5px;
-	border: none;
-	cursor: pointer;
-	outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 20px;
+  background-color: #2c5282;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
 }
 
 .settings--popup {
-	width: 650px;
-	height: 300px;
-	border-radius: 8px;
-	background-color: #fff;
-	box-shadow: 0 0 10px #aaa;
-	position: absolute;
-	top: 20%;
-	left: 5%;
-	opacity: 0;
-	transition: all 0.5s;
-	padding: 25px;
+  width: 650px;
+  height: 300px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 10px #aaa;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  opacity: 0;
+  transition: all 0.5s;
+  padding: 25px;
 }
 .settings--popupActive {
-	width: 650px;
-	height: 300px;
-	border-radius: 8px;
-	background-color: #fff;
-	box-shadow: 0 0 10px #aaa;
-	position: absolute;
-	top: 27%;
-	left: 5%;
-	opacity: 1;
-	transition: all 0.5s;
-	padding: 25px;
+  width: 650px;
+  height: 300px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 10px #aaa;
+  position: absolute;
+  top: 27%;
+  left: 5%;
+  opacity: 1;
+  transition: all 0.5s;
+  padding: 25px;
+  z-index: 1;
 }
 
 .themes--colors {
-	display: flex;
-	list-style-type: none;
-	padding: 0;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
 }
 
 .themes--colorsIn {
-	height: 18px;
-	width: 18px;
-	border-radius: 50%;
-	background-color: red;
-	margin: 0 5px;
-	cursor: pointer;
-	transition: all 0.1s;
-	outline-color: coral;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background-color: red;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: all 0.1s;
+  outline-color: coral;
 }
 .themes--colorsIn:active {
-	transform: scale(1.2);
-	transition: all 0.1s;
+  transform: scale(1.2);
+  transition: all 0.1s;
 }
 .green {
-	background-color: #41a169;
+  background-color: #41a169;
 }
 .blue {
-	background-color: #61aae5;
+  background-color: #61aae5;
 }
 .purple {
-	background-color: #8269d5;
+  background-color: #8269d5;
 }
 .red {
-	background-color: #e53e3e;
+  background-color: #e53e3e;
 }
 .orange {
-	background-color: #dc6c31;
+  background-color: #dc6c31;
 }
 .darkBlue {
-	background-color: #5b69d8;
+  background-color: #5b69d8;
 }
 .lightGreen {
-	background-color: #319795;
+  background-color: #319795;
 }
 .gray {
-	background-color: #718096;
+  background-color: #718096;
 }
 .yellow {
-	background-color: #d59e31;
+  background-color: #d59e31;
 }
 
 /* NotesDetailspopup */
@@ -128,61 +129,143 @@
 .theme--header,
 .theme--bannerHeader,
 .bannerHeader {
-	margin: 0;
+  margin: 0;
 }
 
 .popup--heading {
-	font-size: 24px;
-	font-weight: 600px;
-	letter-spacing: 1.5px;
+  font-size: 24px;
+  font-weight: 600px;
+  letter-spacing: 1.5px;
 }
 
 .popup--fields,
 .themes,
 .banner,
 .save {
-	margin: 15px 0;
+  margin: 15px 0;
 }
 
 .popup--fieldsHead,
 .theme--header,
 .bannerHeader {
-	font-size: 18px;
-	font-weight: 400;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .popup--fieldsInput,
 .banner--fieldsInput {
-	margin: 10px 0;
-	padding: 4px 20px;
-	border: none;
-	outline: none;
+  margin: 10px 0;
+  padding: 4px 20px;
+  border: none;
+  outline: none;
 }
 
 .bannerBtn {
-	margin-left: 2px;
-	padding: 8px;
-	background-color: #2c5282;
-	color: #fff;
-	font-size: 12px;
-	font-weight: 400;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-	outline: none;
+  margin-left: 2px;
+  padding: 8px;
+  background-color: #2c5282;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
 }
 .save {
-	margin: 5px 0;
+  margin: 5px 0;
 }
 
 .save--btn {
-	background-color: #2c5282;
-	padding: 8px 25px;
-	color: #fff;
-	font-size: 12px;
-	font-weight: 400;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-	outline: none;
+  background-color: #2c5282;
+  padding: 8px 25px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.NotesList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  opacity: 0;
+}
+.NotesList--active {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  opacity: 1;
+}
+
+.NotesTodoList {
+  width: 280px;
+  height: 200px;
+  background-color: #ffffff;
+  margin: -25px 30px 0px 30px;
+  box-shadow: 0 0 10px #aaa;
+  border-radius: 8px;
+  border: 3px solid #dd6b20;
+}
+
+.NotesProgressList {
+  width: 280px;
+  height: 200px;
+  background-color: #ffffff;
+  margin: -25px 30px 0px 30px;
+  box-shadow: 0 0 10px #aaa;
+  border-radius: 8px;
+  border: 3px solid #d69e2e;
+}
+
+.NotesReviewList {
+  width: 280px;
+  height: 200px;
+  background-color: #ffffff;
+  margin: -25px 30px 0px 30px;
+  box-shadow: 0 0 10px #aaa;
+  border-radius: 8px;
+  border: 3px solid #3182ce;
+}
+
+.NotesDoneList {
+  width: 280px;
+  height: 200px;
+  background-color: #ffffff;
+  margin: -25px 30px 0px 30px;
+  box-shadow: 0 0 10px #aaa;
+  border-radius: 8px;
+  border: 3px solid #38a169;
+}
+
+.NotesTodoList--title,
+.NotesProgressList--title,
+.NotesReviewList--title,
+.NotesDoneList--title {
+  margin: 0;
+}
+.NotesTodoList--in,
+.NotesProgressList--in,
+.NotesReviewList--in,
+.NotesDoneList--in {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+.NotesTodoList--btn,
+.NotesProgressList--btn,
+.NotesReviewList--btn,
+.NotesDoneList--btn {
+  z-index: 1;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
 }
