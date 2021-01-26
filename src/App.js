@@ -5,22 +5,22 @@ import { NameProvider } from "./Components/State/NameContext";
 import { SetpopupProvider } from "./Components/State/SetpopupContext";
 import { ThemeProvider } from "./Components/State/ThemeContext";
 function App() {
-	return (
-		<ThemeProvider>
-			<SetpopupProvider>
-				<NameProvider>
-					<div className="App">
-						<Router>
-							<Switch>
-								<Route path="/" exact component={Home} />
-								<Route path="/notes" exact component={Notes} />
-							</Switch>
-						</Router>
-					</div>
-				</NameProvider>
-			</SetpopupProvider>
-		</ThemeProvider>
-	);
+  return (
+    <ThemeProvider>
+      <SetpopupProvider>
+        <NameProvider>
+          <div className="App">
+            <Router>
+              <Switch>
+                <Route path="/" exact component={Home} />
+                <Route path="/notes" exact component={Notes} />
+              </Switch>
+            </Router>
+          </div>
+        </NameProvider>
+      </SetpopupProvider>
+    </ThemeProvider>
+  );
 }
 
 export default App;
