@@ -30,7 +30,7 @@ const Home = () => {
   return (
     <div>
       <div className="top">
-        <h3 className="top--in">Welcome to the NoteBoard , Notes taking app</h3>
+        <h3 className="top--in">Welcome to the Notes taking app</h3>
       </div>
       <div className="bottom">
         <div className="bottom--in">
