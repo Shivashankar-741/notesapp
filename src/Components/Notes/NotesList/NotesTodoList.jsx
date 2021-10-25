@@ -1,23 +1,26 @@
-import React, { useContext, useState } from "react";
-import { ThemeContext } from "../../State/ThemeContext";
-import { v4 as uuidv4 } from "uuid";
-import { AiTwotoneDelete } from "react-icons/ai";
+import React, { useContext, useState } from 'react';
+import { ThemeContext } from '../../State/ThemeContext';
+import { v4 as uuidv4 } from 'uuid';
+import { AiTwotoneDelete } from 'react-icons/ai';
 
 const NotesTodoList = () => {
   const [theme, setTheme] = useContext(ThemeContext);
-  const [data, setData] = useState("");
-  const [data1, setData1] = useState([]);
+
+  const [data, setData] = useState('');
+  const [data1, setData1] = useState(JSON.parse(localStorage.getItem('todos') || '[]'));
 
   const clickHandler = () => {
-    if (data !== "") {
+    if (data !== '') {
       setData1(data1.concat({ data, id: uuidv4() }));
-      setData("");
+      localStorage.setItem('todos', JSON.stringify(data1.concat({ data, id: uuidv4() })));
+      setData('');
     }
   };
 
   const deletehandler = (id) => {
-    const changeData = data1.filter((el) => el.id !== id);
-    setData1(changeData);
+    let filteredData = JSON.parse(localStorage.getItem('todos')).filter((el) => el.id !== id);
+    localStorage.setItem('todos', JSON.stringify(filteredData));
+    setData1(filteredData);
   };
 
   return (
