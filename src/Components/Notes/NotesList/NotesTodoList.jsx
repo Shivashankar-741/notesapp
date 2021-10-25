@@ -1,27 +1,13 @@
 import React, { useContext, useState } from 'react';
 import { ThemeContext } from '../../State/ThemeContext';
-import { v4 as uuidv4 } from 'uuid';
 import { AiTwotoneDelete } from 'react-icons/ai';
+import { clickHandler, deleteHandler } from './handlers';
 
 const NotesTodoList = () => {
   const [theme, setTheme] = useContext(ThemeContext);
 
   const [data, setData] = useState('');
   const [data1, setData1] = useState(JSON.parse(localStorage.getItem('todos') || '[]'));
-
-  const clickHandler = () => {
-    if (data !== '') {
-      setData1(data1.concat({ data, id: uuidv4() }));
-      localStorage.setItem('todos', JSON.stringify(data1.concat({ data, id: uuidv4() })));
-      setData('');
-    }
-  };
-
-  const deletehandler = (id) => {
-    let filteredData = JSON.parse(localStorage.getItem('todos')).filter((el) => el.id !== id);
-    localStorage.setItem('todos', JSON.stringify(filteredData));
-    setData1(filteredData);
-  };
 
   return (
     <div className="NotesTodoList">
@@ -35,7 +21,7 @@ const NotesTodoList = () => {
         />
         <button
           className="NotesTodoList--btn"
-          onClick={clickHandler}
+          onClick={() => clickHandler(data, setData, data1, setData1, 'todos')}
           style={{ backgroundColor: theme }}
         >
           Add task
@@ -48,7 +34,7 @@ const NotesTodoList = () => {
             <span>
               <AiTwotoneDelete
                 className="NotesTodoList--listsDelete"
-                onClick={() => deletehandler(el.id)}
+                onClick={() => deleteHandler(el.id, setData1, 'todos')}
               />
             </span>
           </li>
